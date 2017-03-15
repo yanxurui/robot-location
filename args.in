@@ -1,0 +1,5 @@
+--outputdir output
+--variable ngx_install_dir:/opt/nginx
+--variable do_post:True
+--consolemarkers off
+location.robot

@@ -29,6 +29,7 @@ URI Should Be Resolved
 The Longest Matching Prefix Is Used If No Regex matches
     [Tags]    prefix
     [Template]    Send Request And Verify Response
+    ${EMPTY}                    /                   if uri is emtpy, the uri is / by default
     /home/fo                    /home               location /home is the prefix of uri /home/fo, but location /home/foo isn't
     /home/foo                   /home/foo
     /home/foo/                  /home/foo
